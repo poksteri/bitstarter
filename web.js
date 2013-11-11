@@ -7,7 +7,7 @@ app.use(express.logger());
 app.get('/', function(request, response) {
  var buffer = fs.readFile('index.html');
  //response.send('Hello from bitstarter World!');
- response.send(buffer.toString);
+ response.send(buffer.toString());
 });
 
 var port = process.env.PORT || 5000;
